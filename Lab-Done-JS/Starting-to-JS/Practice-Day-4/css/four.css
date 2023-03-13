@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid black;
+  }
+  #upper{
+    background-color: orange;
+    color: white;
+  }
+  td{
+    background-color: #f2f2f2;
+    color: crimson;
+  }

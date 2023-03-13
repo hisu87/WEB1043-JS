@@ -1,0 +1,6 @@
+alert("Chào mừng đến với khóa học của Khày Hiếu Đẹp Trai")
+alert("Để tham gia khóa học của Khầy, hãy để lại thông tin cho Khầy!!")
+let name = prompt("Nhập tên đi pé:")
+let age = prompt("Nhập tuổi đi pé "+name+":")
+let phonenumber = prompt("Nhập SĐT đi pé "+name+":")
+let email = prompt("Nhập email đi pé "+name+":")

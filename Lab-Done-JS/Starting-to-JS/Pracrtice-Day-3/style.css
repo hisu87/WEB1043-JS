@@ -1,0 +1,24 @@
+body {
+    font-family: system-ui;
+    background: #000000;
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+    font-weight: Bolder;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 50px;
+  }
+  #email {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  #name {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(38, 255, 0);
+  }
