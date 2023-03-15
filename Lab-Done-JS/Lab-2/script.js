@@ -1,14 +1,14 @@
 
 
-Bài 1
-var a = prompt("Enter a:");
-var b = prompt("Enter b:");
+// Bài 1
+// var a = prompt("Enter a:");
+// var b = prompt("Enter b:");
 
-var c;
-c = a**2 + b**2;
+// var c;
+// c = a**2 + b**2;
 
-alert("c^2 = " +c);
-console.log(c);
+// alert("c^2 = " +c);
+// console.log(c);
 
 
 /*
@@ -27,8 +27,8 @@ alert(`Kết quả: ${km} km^2) (${sao}Sào) (${mau}Mẫu) (${ha}Hecta)`);ư
 
 */
 
-/*
-Bài 3
+
+// Bài 3
 
 // Hàm tính chỉ số BMI
 function calculateBMI(weight, height) {
@@ -74,7 +74,7 @@ function calculateBMI(weight, height) {
   // Hiển thị kết quả ra màn hình
   alert("Chỉ số BMI của bạn là: " + bmi + "\nĐánh giá: " + evaluation);
 
-*/
+
 
 /*
 Bài 4
@@ -102,7 +102,7 @@ theList.push('LAST');
 console.log(theList); // ["FIRST", "Kevin", "middle", "hello world", true, 35, null, undefined, "LAST"]
 
 */
-
+/*
 // Tạo biến x để lưu số bí mật
 var x = 10 + Math.round(5 * Math.random());
 // Tạo biến y để lưu số lần đoán
@@ -128,3 +128,4 @@ function checkGuess() {
         y++;
     }
 }
+*/
