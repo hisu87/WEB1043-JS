@@ -1,10 +1,7 @@
-//Nhắc người dùng nhập số nguyên dương n
-var n = prompt("Enter a positive integer");
-
-//Chuyển chuỗi đầu vào thành số
-n = Number(n);
-var arr = new Array(n);
-for (var i = 0; i < n; i++) {
-  arr[i] = i;
+let n = prompt("Nhập số phần tử của mảng: ");
+let arr = new Array(n);
+for (let i = 0; i < n; i++) {
+  arr[i] = prompt("Nhập giá trị cho phần tử " + (i + 1) + " của mảng 1:");
 }
 console.log(arr);
+document.write("Mảng có các phần tử: " + arr + "<br>");
