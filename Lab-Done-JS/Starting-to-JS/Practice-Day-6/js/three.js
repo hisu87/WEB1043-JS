@@ -8,4 +8,4 @@ for (var i = 0; i < n; i++) {
   arr[i] = i;
 }
 // console.log(arr.concat().join("-")) sẽ nối các phần tử của mảng lại với nhau bằng dấu - và xuất ra màn hình.
-console.log(arr.concat().join("-"));
+document.write(arr.concat(-));
