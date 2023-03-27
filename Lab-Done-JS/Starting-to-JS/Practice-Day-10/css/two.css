@@ -1,0 +1,19 @@
+body{   
+    background-color: #f5f5f5;
+    font-family: popins;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url(../R.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #ddd;
+    background-color: #999;
+}

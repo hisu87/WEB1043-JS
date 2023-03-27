@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/one.css">
+    <title>1</title>
+</head>
+<body>
+
+    <form action="dktv" autocomplete="on">
+
+        <table border="1">
+            <tr>
+                <th colspan="2" style="background-color: orange;">ĐĂNG KÝ THÀNH VIÊN</th>
+            </tr>
+            <tr>
+                <th>Họ và Tên</th>
+                <td><input type="text" name="HoTen" id="name" value="Không được bỏ trống" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Tên Tài Khoản</th>
+                <td><input type="text" name="Account" id="acc" value="Từ 6-12 ký tự" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Mật Khẩu</th>
+                <td><input type="password" name="Password" id="pass" value="Không được bỏ trống" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="text" name="Email" id="email" value="Không được bỏ trống" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Mã Số Xác Nhận</th>
+                <td><input type="text" name="Code" id="code" value="Nhập vào 4 số bất kỳ" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Đăng Ký">
+                    <input type="reset" value="Làm mới"></td>
+            </tr>
+        </table>
+
+    </form>
+
+
+    <script src="./JS/one.js"></script>
+</body>
+</html>

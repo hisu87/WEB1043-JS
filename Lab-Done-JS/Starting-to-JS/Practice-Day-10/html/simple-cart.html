@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/two.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+    <title>Simple - Cart</title>
+</head>
+<body>
+    
+    <h3>DANH MỤC HÀNG HÓA</h3>
+    <table border="1">
+        <tr>
+            <th>STT</th>
+            <th>Tên hàng hóa</th>
+            <th>Giá</th>
+            <th>Thao tác</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Quần jean</td>
+            <td>500.000</td>
+            <td><button onclick="them(this)">Thêm vô giỏ hàng</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Áo sơ mi</td>
+            <td>300.000</td>
+            <td><button onclick="them(this)">Thêm vô giỏ hàng</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Áo thun</td>
+            <td>200.000</td>
+            <td><button onclick="them(this)">Thêm vô giỏ hàng</button></td>
+        </tr>
+    </table>
+    <h3> GIỎ HÀNG </h3>
+    <table border="1" id="cart"></table>
+    <h3>
+        Tổng Tiền:
+        <span id="tong">0</span>
+    </h3>
+<script src="../js/two.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<script>
+		function validateForm() {
+			var name = document.forms["myForm"]["name"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var password = document.forms["myForm"]["password"].value;
+			var username = document.forms["myForm"]["username"].value;
+			var code = document.forms["myForm"]["code"].value;
+
+			if (name == "" || email == "" || password == "") {
+				alert("Please fill out all required fields.");
+				return false;
+			}
+
+			if (username.length < 6 || username.length > 12) {
+				alert("Username must be between 6 and 12 characters.");
+				return false;
+			}
+
+			if (isNaN(code)) {
+				alert("Code must be a number.");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<h2>Registration Form</h2>
+
+	<form name="myForm" action="submit.php" method="post" onsubmit="return validateForm()">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name"><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email"><br>
+
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"><br><br>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="code">Code:</label><br>
+        <input type="text" id="code" name="code"><br><br>
+
+        <input type="submit" value="Submit">
+    </form> 
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/one.css">
+    <title>1</title>
+</head>
+<body>
+
+    <form name="myForm" action="dktv" autocomplete="on" method="post" onsubmit="return validateForm()">
+
+        <table border="1">
+            <tr>
+                <th colspan="2" style="background-color: orange;">ĐĂNG KÝ THÀNH VIÊN</th>
+            </tr>
+            <tr>
+                <th>Họ và Tên</th>
+                <td><input type="text" name="HoTen" id="name" value="Không được bỏ trống" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Tên Tài Khoản</th>
+                <td><input type="text" name="Account" id="username" value="Từ 6-12 ký tự" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Mật Khẩu</th>
+                <td><input type="password" name="Password" id="password" value="Không được bỏ trống" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="text" name="Email" id="email" value="Không được bỏ trống" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <th>Mã Số Xác Nhận</th>
+                <td><input type="text" name="Code" id="code" value="Nhập vào 4 số bất kỳ" onclick="clearField(this)"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Đăng Ký">
+                    <input type="reset" value="Làm mới"></td>
+            </tr>
+        </table>
+
+    </form>
+
+
+    <script src="./JS/two.js"></script>
+</body>
+</html>

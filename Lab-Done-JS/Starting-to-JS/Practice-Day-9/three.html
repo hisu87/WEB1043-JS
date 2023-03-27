@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/three.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <form action="Calculator" name="Calculator">
+        <table id="1" border="1">
+            <tr>
+                <th colspan="2">Calculator</th>
+            </tr>
+            <tr>
+                <th>Nhập số thứ nhất</th>
+                <td><input type="text" name="num1" id="num1"></td>
+            </tr>
+            <tr>
+                <th>Nhập số thứ hai</th>
+                <td><input type="text" name="num2" id="num2"></td>
+            </tr>
+            <tr>
+                <th>Chọn phép tính</th>
+                <td>
+                    <input type="button" value="+" onclick="add()">
+                    <input type="button" value="-" onclick="tru()">
+                    <input type="button" value="x" onclick="nhan()">
+                    <input type="button" value="/" onclick="chia()">
+                </td>
+            </tr>
+            <tr>
+                <th>phép tính khác</th>
+                <td><input type="button" value="Abs" onclick="trituyetdoi()"><input type="button" value="Sqrt"
+                        onclick="canbac2()"><input type="button" value="Ceil" onclick="lamtron()"></td>
+            </tr>
+            <tr>
+                <th>Kết quả</th>
+                <td id="result"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="./JS/three.js"></script>
+</body>
+
+</html>

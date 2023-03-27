@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I. CÁC SỰ KIỆN VỚI LINK VÀ HÌNH ẢNH</h1>
+    <h2>1. Sự kiện onclick</h2>
+    <a href="https://www.google.com" onclick="alert('Bạn đang đi đến Google')">Đến Google</a>
+    <h2>2. Sự kiện OnMouseOver</h2>
+    <img src="hinh2.png" onmouseover="this.src='hinh1.png'" onmouseout="this.src='hinh2.png'">
+    <h2>3. Sự Kiện OnMouseOut</h2>
+    <img src="hinh1.png" onmouseout="this.src='hinh1.png'"onmouseover="this.src='hinh2.png'">
+    <h1>II. SỰ KIỆN VỚI DOCUMENT</h1>
+    <h2>1. Sự kiện onLoad</h2>
+    <body onload="alert('Trang web đã tải hoàn tất')">
+    <h2>2. Sự Kiện onUnload</h2>
+    <body onunload="alert('Bạn đã rời khỏi trang web')">
+    <h1>III. SỰ KIỆN VỚI FORM VÀ CÁC PHẦN TỬ TRONG FORM</h1>
+    <h2>1.  Đối tượng Form và các sự kiện của nó</h2>
+    <h3>A.  Sự kiện onSubmit</h3>
+    <form onsubmit="return validateForm()">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <input type="submit" value="Gửi">
+      </form>
+      
+      <script>
+      function validateForm() {
+        var name = document.forms[0]["name"].value;
+        var email = document.forms[0]["email"].value;
+        var phone = document.forms[0]["phone"].value;
+        if (name == "") {
+          alert("Vui lòng nhập họ và tên");
+          return false;
+        }
+        if (email == "") {
+          alert("Vui lòng nhập email");
+          return false;
+        }
+        if (phone == "") {
+          alert("Vui lòng nhập số điện thoại");
+          return false;
+        }
+      }
+      </script>
+    <h3>B.  Sự kiện onReset</h3>
+    <form onreset="confirmReset()">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <input type="reset" value="Xóa trắng">
+      </form>
+      <script>
+      function confirmReset() {
+        if (confirm("Bạn có chắc chắn muốn xóa trắng các trường dữ liệu?")) {
+          alert("Đã xóa trắng các trường dữ liệu");
+        } else {
+          event.preventDefault();
+        }
+      }
+      </script>
+      <h2>2. Đối tượng Form và các sự kiện của nó</h2>
+      <h3>A.  Sự kiện onSubmit</h3>
+      <input type="text" onblur="alert('Bạn đã rời khỏi ô văn bản')">
+      <h3>B.  Sự kiện onChange</h3>
+      <select onchange="alert('Giá trị đã được thay đổi')">
+        <option value="value1">Lựa chọn 1</option>
+        <option value="value2">Lựa chọn 2</option>
+      </select>
+      <h3>C.  Sự kiện onFocus</h3>
+      <input type="text" onfocus="alert('Đã vào ô nhập')">
+      <h2>3. Phần tử CheckBox, Radio Button, Button, Reset Button và các sự kiện của nó</h2>
+      <h3>A.  Sự kiện onClick</h3>
+      <button onclick="alert('Thêm vào giỏ hàng thành công')">Thêm vào giỏ hàng</button>
+
+
+      
+
+</body>
+</html>
