@@ -7,8 +7,8 @@ function them(button) {
     tongtien();
 }
 function xoa(button) {
-    button.parentElement.parentElement.remove();
-    document.getElementById("cart").removeChild(button.parentElement.parentElement);
+    var row = button.parentElement.parentElement;
+    document.getElementById("cart").removeChild(row); 
     tongtien();
 }
 function tongtien() {
@@ -17,11 +17,16 @@ function tongtien() {
     var tong = 0;
     // Chức năng này tính giá của tất cả các ô trong bảng
     for (var i = 0; i < rows.length; i++) {
-        var cells = rows[i].getElementsByTagName("td");
-        var price = cells[2].innerText.substr(0, cells[2].innerText.length);
-        console.log(price);
-        tong += 1 * price;
-        Number(tong)
+        var tong = 0;
+        for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].getElementsByTagName("td");
+            var price = cells[2].innerText.substr(0);
+            tong += 1 * price;
+            console.log(cells);
+            console.log(price);
+            console.log(tong);
+        }
     }
-    document.getElementById("tong").innerText = tong + ".000" + " VND"; 
+    document.getElementById("tong").innerText = tong.toLocaleString() + ",000" + " VND";
+    // document.getElementById("tong").innerText = tong + " VND";
 }

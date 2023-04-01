@@ -1,18 +1,18 @@
 // Cach 1
 var iPhone9 =  {
     name: 'iPhone 9',
-    price: 1000,
+    price: 1950,
 }
-const person = {
-    fname: 'John',
-    lname: 'Doe',
-    age: 25,
-    id: 5566,
-    fullName: function() {
-        return this.fname + ' ' + this.lname;
-    }
-}
-alert(person.fullName());
+// const person = {
+//     fname: 'John',
+//     lname: 'Doe',
+//     age: 25,
+//     id: 5566,
+//     fullName: function() {
+//         return this.fname + ' ' + this.lname;
+//     }
+// }
+// alert(person.fullName());
 
 function oke() {
     console.log('oke');
@@ -23,7 +23,7 @@ function oke() {
 }
 
 // Cach 2
-/*
+
 
 function display(){
             console.log('oke');
@@ -36,4 +36,3 @@ function display(){
             document.getElementById("name").innerText = name;
             document.getElementById("amount").innerText = amount;
         } 
-*/
