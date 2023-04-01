@@ -1,0 +1,46 @@
+@import url(header.css);
+@import url(reset.css);
+@import url(footer.css);
+
+body {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 20px;
+}
+.container{
+    padding: 50px;
+}
+.container >.para >h1 >.sds{
+    text-decoration: none;
+    color: black;
+}
+.container >.para >h1 >.sds:hover{
+    text-decoration: none;
+    color: green;
+}
+.container >.para >p >.cltn{
+    color: green;
+}
+.container >.para >p >.cltn:hover{
+    color: cornsilk;
+    background-color: green;
+}
+h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+h2{
+    font-size: 25px;
+    font-weight: 800;
+}
+img{
+    border: 3px solid lightgreen;
+    border-radius: 40px;
+    width: 40%;
+    margin: 10px;
+}
+p{
+    font-weight: 800;
+    font-size: 20px;
+}
