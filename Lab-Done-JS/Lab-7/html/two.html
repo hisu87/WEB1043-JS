@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<link rel="stylesheet" href="../css/two.css">
+</head>
+<body>
+
+<button onclick="totheright()">Go right </button>
+    <div id="block"></div>
+
+<script>
+function totheright() {
+  var elem = document.getElementById("block");   
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+</body>
+</html> 
+<!-- 
+// The code above is a basic HTML5 template. The <!DOCTYPE html> declaration defines the document type and the <html> element is the root element of an HTML page. The <head> element contains meta information about the document and the <body> element contains the visible page content.
+// The button in the HTML code has an onclick attribute that calls the totheright() function when clicked. However, the function defined in the script is named totheheight() instead of totheright(). This is causing the button to not work as intended. To fix this issue, change the function name in the script from totheheight() to totheright(). -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<link rel="stylesheet" href="../css/two.css">
+</head>
+<body>
+
+<button onclick="totheight()">Go right </button>
+    <div id="block"></div>
+
+<script>
+function totheright() {
+  var elem = document.getElementById("block");   
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+</body>
+</html> 
+
+// The code above is a basic HTML5 template. The <!DOCTYPE html> declaration defines the document type and the <html> element is the root element of an HTML page. The <head> element contains meta information about the document and the <body> element contains the visible page content.
+I'm sorry, but there doesn't seem to be any code in the SELECTION that needs debugging. The code is a basic HTML5 template with a function that animates a block moving to the right. If you have any specific issues or errors you are encountering, please let me know and I can help you debug them.
+ -->
