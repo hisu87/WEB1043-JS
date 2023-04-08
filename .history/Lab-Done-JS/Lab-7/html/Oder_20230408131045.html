@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oder</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ccc;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="radio" i] {
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            display: inline-block;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Đặt Hàng</h1>
+    <form action="#">
+        <label for="products">Products</label>
+        <input type="text" name="products" id="products" value="Iphone 12 Pro Max">
+        <label for="qty">Số Lượng</label>
+        <input type="number" name="qty" id="qty">
+        <label for="price">Đơn Giá</label>
+        <input type="text" name="price" id="price" value="30.990.000 VND">
+        <label for="dia_chi">Nội Thành</label>
+        <input type="radio" name="dia_chi" onclick="hien_thi(false)" />
+        <label for="">Ngoại Thành</label>
+        <input type="radio" name="dia_chi" onclick="hien_thi(true)" />
+        <div id="phi_vc" style="display: none">
+            <label for="phi_vc">Phí Vận Chuyển</label>
+            <input type="text" name="phi_vc" id="phi_vc" value="55.000 VND ">
+
+        </div>
+        <button type="submit" onclick="validateForm()">Đặt Hàng</button>
+
+
+    </form>
+
+
+    <script>
+
+        function hien_thi(visible) {
+            var phi_vc = document.getElementById("phi_vc");
+            phi_vc.style.display = visible ? "" : "none";
+        }
+
+        // We can add a function to check if the user has entered data or not and display a message accordingly
+        // We can also add labels to indicate where the user should enter the data
+        // Here's an example implementation:
+
+        function validateForm() {
+            var product = document.getElementById("products").value;
+            var storageAndRam = document.getElementById("storageandram").value;
+            var color = document.getElementById("color").value;
+            var diaChi = document.querySelector('input[name="dia_chi"]:checked');
+
+            if (!product || !storageAndRam || !color || !diaChi) {
+                alert("Vui lòng nhập đầy đủ thông tin");
+                return false;
+            }
+
+            // We can also add a message to indicate where the user should enter the data
+            // For example:
+            if (!product) {
+                alert("Vui lòng chọn sản phẩm");
+                return false;
+            }
+
+            if (!storageAndRam) {
+                alert("Vui lòng chọn dung lượng và RAM");
+                return false;
+            }
+
+            if (!color) {
+                alert("Vui lòng chọn màu sắc");
+                return false;
+            }
+
+            if (!diaChi) {
+                alert("Vui lòng chọn địa chỉ");
+                return false;
+            }
+
+            // If all data is entered, we can submit the form
+            return true;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

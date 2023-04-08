@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Submission</title>
+</head>
+<!-- In your HTML file -->
+<form action="other-page.html" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<!-- In your JavaScript file -->
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+
+  const url = new URL('other-page.html', window.location.href);
+  url.searchParams.set('name', name);
+  url.searchParams.set('email', email);
+
+  window.location.href = url.toString();
+});
+</body>
+</html>

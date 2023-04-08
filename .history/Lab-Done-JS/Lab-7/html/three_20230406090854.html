@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Submission</title>
+</head>
+<body>
+	<h1>Form Submission</h1>
+	<form action="receiver.html">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br><br>
+		<button type="submit">Submit</button>
+There is no error in the provided code. The issue has been resolved by adding the confirmation message after form submission.
+	</form>
+	<script>
+		
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const name = document.querySelector('#name').value;
+	const email = document.querySelector('#email').value;
+	const message = document.querySelector('#message').value;
+	if (!name || !email || !message) { // check if any of the fields are empty
+		alert('Please fill in all fields.'); // alert user if any of the fields are empty
+		return; // stop the function from executing further
+	}
+	console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+	form.reset();
+	const confirmation = document.createElement('p');
+	confirmation.textContent = 'Thank you for your submission!';
+	form.appendChild(confirmation);
+});
+        
+	</script>
+</body>
+</html>

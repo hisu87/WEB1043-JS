@@ -1,0 +1,23 @@
+.rating {
+    display: inline-block;
+    font-size: 0;
+  }
+  
+  .star {
+    color: black;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url(star.png);
+  }
+  
+  .star.active,
+  .star:hover {
+    background-position: -20px 0;
+  }
+  
+  .star.active ~ .star,
+  .star:hover ~ .star {
+    background-position: 0 0;
+  }

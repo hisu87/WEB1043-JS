@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/startrating.css">
+    <title>Stat Rating</title>
+</head>
+
+<body>
+    <div class="rating">
+        <span class="star" data-value="1"></span>
+        <span class="star" data-value="2"></span>
+        <span class="star" data-value="3"></span>
+        <span class="star" data-value="4"></span>
+        <span class="star" data-value="5"></span>
+      </div>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+
+stars.forEach(function(star) {
+  star.addEventListener('click', setRating);
+});
+
+function setRating(e) {
+  const value = parseInt(e.target.getAttribute('data-value'));
+  
+  // Save rating value to database or do something else with it
+}
+    </script>
+</body>
+
+</html>

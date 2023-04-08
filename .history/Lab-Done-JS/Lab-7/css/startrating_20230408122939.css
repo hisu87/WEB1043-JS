@@ -1,0 +1,22 @@
+.rating {
+    display: inline-block;
+    font-size: 0;
+}
+
+.star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(../4aef568197bdfc6b4ba45342bb99721e.png) 0 0 no-repeat;
+}
+
+.star.active,
+.star:hover {
+    background-position: -20px 0;
+}
+
+.star.active~.star,
+.star:hover~.star {
+    background-position: 0 0;
+}

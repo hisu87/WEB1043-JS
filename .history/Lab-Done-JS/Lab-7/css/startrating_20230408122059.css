@@ -1,0 +1,23 @@
+.rating {
+    display: inline-block;
+    font-size: 0;
+    background-color: violet;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url(https://th.bing.com/th/id/OIP.Su9WgZe9_GtLpFNCu5lyHgHaG2?pid=ImgDet&rs=1);
+  }
+  
+  .star.active,
+  .star:hover {
+    background-position: -20px 0;
+  }
+  
+  .star.active ~ .star,
+  .star:hover ~ .star {
+    background-position: 0 0;
+  }
