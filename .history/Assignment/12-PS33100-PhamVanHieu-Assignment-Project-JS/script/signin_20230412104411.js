@@ -1,0 +1,1 @@
+action="index.html" method="post" class="box" onsubmit="return validateForm()"
